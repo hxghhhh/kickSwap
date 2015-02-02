@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ksDelegate.h"
 #import <Parse/Parse.h>
 #import <MapKit/MapKit.h>
 
 @interface ViewController () <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UITextFieldDelegate>
+
+@property id<ksDelegate> delegate;
 
 @property (strong, nonatomic) PFLogInViewController *login;
 @property (strong, nonatomic) PFUser *user;
@@ -146,5 +149,19 @@
          }
      }];
 }
+
+-(id) initWithDelegate: (id<ksDelegate>)delegate
+{
+    self = [super initWithNibName: (nil) bundle: [NSBundle mainBundle]];
+    
+    if(self)
+    {
+        self.delegate = delegate;
+    }
+    
+    return self;
+    
+}
+
 
 @end
