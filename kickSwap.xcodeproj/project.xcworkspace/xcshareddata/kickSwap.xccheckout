@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6AC26C2F-1A2A-4C55-9976-5E3097A0CFBC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>kickSwap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>931B87BDF6FF27546E0300A8E521110A844D5D36</key>
+		<string>github.com:hamtec3/kickSwap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>kickSwap.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>931B87BDF6FF27546E0300A8E521110A844D5D36</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:hamtec3/kickSwap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>931B87BDF6FF27546E0300A8E521110A844D5D36</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>931B87BDF6FF27546E0300A8E521110A844D5D36</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kickSwap</string>
+		</dict>
+	</array>
+</dict>
+</plist>
