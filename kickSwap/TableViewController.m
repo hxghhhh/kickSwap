@@ -40,7 +40,7 @@
             colorsArray = [[NSArray alloc] initWithArray:objects];
         }
         
-        [tableView reloadData];
+        [tableView reloadData]; // reload tableView with new elements
     }];
 
 }
