@@ -34,6 +34,8 @@
 		A821CE861A4BF14C002952E8 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821CE851A4BF14C002952E8 /* Twitter.framework */; };
 		A821CE881A4BF284002952E8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821CE871A4BF284002952E8 /* Social.framework */; };
 		A821CE8A1A4BF28F002952E8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821CE891A4BF28F002952E8 /* Accounts.framework */; };
+		A8C1E03E1A94F77C00E9657E /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */; };
+		A8DDB23F1A7C10F7009F51E2 /* ksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DDB23E1A7C10F7009F51E2 /* ksTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,11 @@
 		A821CE851A4BF14C002952E8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		A821CE871A4BF284002952E8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A821CE891A4BF28F002952E8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A85A4B6C1A6E0322001B9CF4 /* ksDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ksDelegate.h; sourceTree = "<group>"; };
+		A8C1E03C1A94F77800E9657E /* ODRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
+		A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
+		A8DDB23D1A7C10F7009F51E2 /* ksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ksTableViewCell.h; sourceTree = "<group>"; };
+		A8DDB23E1A7C10F7009F51E2 /* ksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ksTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +157,13 @@
 				A821CE4B1A4BE8BB002952E8 /* Images.xcassets */,
 				A821CE4D1A4BE8BB002952E8 /* LaunchScreen.xib */,
 				A821CE3E1A4BE8BB002952E8 /* Supporting Files */,
-				A809F9EE1A58C732008C31B4 /* TableViewController.h */,
+				A8DDB23E1A7C10F7009F51E2 /* ksTableViewCell.m */,
+				A8DDB23D1A7C10F7009F51E2 /* ksTableViewCell.h */,
 				A809F9EF1A58C732008C31B4 /* TableViewController.m */,
+				A809F9EE1A58C732008C31B4 /* TableViewController.h */,
+				A85A4B6C1A6E0322001B9CF4 /* ksDelegate.h */,
+				A8C1E03C1A94F77800E9657E /* ODRefreshControl.h */,
+				A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */,
 			);
 			path = kickSwap;
 			sourceTree = "<group>";
@@ -308,9 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DDB23F1A7C10F7009F51E2 /* ksTableViewCell.m in Sources */,
 				A809F9F01A58C732008C31B4 /* TableViewController.m in Sources */,
 				A821CE471A4BE8BB002952E8 /* ViewController.m in Sources */,
 				A821CE441A4BE8BB002952E8 /* AppDelegate.m in Sources */,
+				A8C1E03E1A94F77C00E9657E /* ODRefreshControl.m in Sources */,
 				A821CE411A4BE8BB002952E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
