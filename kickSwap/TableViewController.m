@@ -22,7 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // Pull data from parseTimeline
     [self performSelector:@selector(retrieveFromParse)];
+    
+    // Add pull to refresh to tableview
+    ODRefreshControl *refreshControl = [[ODRefreshControl alloc] initInScrollView:self.tableView];
+    [refreshControl addTarget:self action:@selector(dropViewDidBeginRefreshing:) forControlEvents:UIControlEventValueChanged];
 };
 
 - (void) retrieveFromParse {
@@ -40,7 +45,14 @@
 
 }
 
-//*********************Setup table of folder names ************************
+- (void) dropViewDidBeginRefreshing: (ODRefreshControl *)refreshControl {
+    double delayInSeconds = 1.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){[refreshControl endRefreshing];
+    });
+}
+
+//////////Setup table of folder names////////////////////////////////////
 
 //get number of sections in tableview
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
