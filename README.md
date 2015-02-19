@@ -1,6 +1,5 @@
 kickSwap
 ========
-2015 iOS App
-Developers:
+Created by hamtech:
 Hugh Anthony Miles II
 
