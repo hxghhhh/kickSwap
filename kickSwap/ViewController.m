@@ -150,18 +150,6 @@
      }];
 }
 
--(id) initWithDelegate: (id<ksDelegate>)delegate
-{
-    self = [super initWithNibName: (nil) bundle: [NSBundle mainBundle]];
-    
-    if(self)
-    {
-        self.delegate = delegate;
-    }
-    
-    return self;
-    
-}
 
 
 @end

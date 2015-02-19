@@ -127,12 +127,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="339.75"/>
+            <point key="canvasLocation" x="1218" y="1196.25"/>
         </scene>
         <!--kickPost-->
         <scene sceneID="O07-jd-C9y">
             <objects>
-                <viewController id="Dor-Du-SlV" sceneMemberID="viewController">
+                <viewController id="Dor-Du-SlV" customClass="ksPostKickController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dh5-Qp-rVd"/>
                         <viewControllerLayoutGuide type="bottom" id="51g-hX-sMA"/>
@@ -141,34 +141,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Kicks to Timeline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="260-2q-9Z0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd6-1c-L94">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="471" width="77" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendToParse:" destination="Dor-Du-SlV" eventType="touchUpInside" id="NPJ-ui-P6z"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ggz-SS-Uhq">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="351" width="341" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKc-jR-rGp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Select Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="269" y="471" width="88" height="30"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send to Parse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n04-fN-kJL">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="249" width="171" height="21"/>
+                                    <rect key="frame" x="132" y="255" width="109" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="260-2q-9Z0"/>
+                                <exclude reference="Jd6-1c-L94"/>
+                                <exclude reference="Ggz-SS-Uhq"/>
+                                <exclude reference="AKc-jR-rGp"/>
+                                <exclude reference="n04-fN-kJL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="260-2q-9Z0"/>
+                                <include reference="Jd6-1c-L94"/>
+                                <include reference="Ggz-SS-Uhq"/>
+                                <include reference="AKc-jR-rGp"/>
+                                <include reference="n04-fN-kJL"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="kickPost" id="S6H-Rg-5Kv"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="selectPhoto" destination="AKc-jR-rGp" id="Vh9-FD-3VN"/>
+                        <outlet property="takePhoto" destination="Jd6-1c-L94" id="yzt-9E-I8v"/>
+                        <outlet property="textField" destination="Ggz-SS-Uhq" id="cvN-nb-q7m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VkF-1n-xwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="1043.25"/>
+            <point key="canvasLocation" x="90" y="1184.25"/>
         </scene>
         <!--Table-->
         <scene sceneID="N0b-oA-2bj">
@@ -246,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuC-1c-CHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.5" y="1887"/>
+            <point key="canvasLocation" x="-1090.5" y="1196.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CLl-iZ-d3E">
@@ -266,7 +306,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrU-0f-Z6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="1121.25"/>
+            <point key="canvasLocation" x="90" y="449.25"/>
         </scene>
     </scenes>
 </document>
