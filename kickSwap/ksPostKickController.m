@@ -29,16 +29,16 @@
     //initWithObjectClass >> Timeline
     PFObject *post = [PFObject objectWithClassName:@"Timeline"];
     
-    
-    NSString *text = self.textField.text;
-    
-    NSLog(@"%@" ,text);
-    
+    //Parse text field for empty inputs
+    NSString *rawString = self.textField.text;
+    NSCharacterSet *whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *trimmed = [rawString stringByTrimmingCharactersInSet:whitespace];
+
     //set fields entry fields in the object class
     post[@"text"] = self.textField.text;
     
     //Check if user has wrtiten something in text field
-    if (self.textField.text != nil ) {
+    if ([trimmed length] != 0 ){
         
         [post saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (succeeded) {
@@ -53,8 +53,10 @@
     
     else
     {
-        NSLog(@"enter values");
+        NSLog(@"Please enter values");
     }
+    
+    
  
     
     
