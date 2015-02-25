@@ -10,7 +10,11 @@
 
 @interface ksPostKickController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+///////////////////////////////////////////////////////////
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+////////////////////////////////////////////////////////////
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *takePhoto;
