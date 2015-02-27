@@ -34,7 +34,6 @@
     PFObject *post = [PFObject objectWithClassName:@"Timeline"];
     
     //ConnectUImage
-
     post[@"picture"] = imageFile;
     
 
