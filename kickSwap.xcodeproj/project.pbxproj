@@ -171,15 +171,14 @@
 		A821CE3D1A4BE8BB002952E8 /* kickSwap */ = {
 			isa = PBXGroup;
 			children = (
+				A821CE481A4BE8BB002952E8 /* Main.storyboard */,
+				A821CE4D1A4BE8BB002952E8 /* LaunchScreen.xib */,
 				A821CE421A4BE8BB002952E8 /* AppDelegate.h */,
 				A821CE431A4BE8BB002952E8 /* AppDelegate.m */,
 				A821CE451A4BE8BB002952E8 /* ViewController.h */,
 				A821CE461A4BE8BB002952E8 /* ViewController.m */,
-				A821CE481A4BE8BB002952E8 /* Main.storyboard */,
 				A8C1E0421A951AEF00E9657E /* ksPostKickController.h */,
 				A8C1E0431A951AEF00E9657E /* ksPostKickController.m */,
-				A821CE4B1A4BE8BB002952E8 /* Images.xcassets */,
-				A821CE4D1A4BE8BB002952E8 /* LaunchScreen.xib */,
 				A8DDB23E1A7C10F7009F51E2 /* ksTableViewCell.m */,
 				A8DDB23D1A7C10F7009F51E2 /* ksTableViewCell.h */,
 				A809F9EF1A58C732008C31B4 /* TableViewController.m */,
@@ -187,6 +186,7 @@
 				A8C1E03C1A94F77800E9657E /* ODRefreshControl.h */,
 				A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */,
 				A85A4B6C1A6E0322001B9CF4 /* ksDelegate.h */,
+				A821CE4B1A4BE8BB002952E8 /* Images.xcassets */,
 				A84E30961AA7A97300A21179 /* UIImageAdditions */,
 			);
 			path = kickSwap;

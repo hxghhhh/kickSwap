@@ -17,5 +17,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *kickPostDetails;
+@property (weak, nonatomic) IBOutlet UILabel *kickPostDescription;
 
 @end

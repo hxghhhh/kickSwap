@@ -382,21 +382,65 @@
                                     <outlet property="delegate" destination="a5k-vy-Ygt" id="Jah-bP-M5H"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UR-J3-4YP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU9-Jx-mJG">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="48" y="61" width="209" height="42"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpF-qU-hMn">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="183" y="319" width="35" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="a5k-vy-Ygt" eventType="touchUpInside" id="JW3-cN-P1a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="mU9-Jx-mJG"/>
+                                        <exclude reference="JpF-qU-hMn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="751"/>
+                                    <mask key="subviews">
+                                        <include reference="mU9-Jx-mJG"/>
+                                        <include reference="JpF-qU-hMn"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="2hf-Rh-pXP"/>
+                                <exclude reference="3UR-J3-4YP"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="2hf-Rh-pXP"/>
+                                <include reference="3UR-J3-4YP"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Table" id="E5U-ol-0Lx"/>
                     <connections>
+                        <outlet property="kickPostDescription" destination="mU9-Jx-mJG" id="M8c-d1-Cc6"/>
+                        <outlet property="kickPostDetails" destination="3UR-J3-4YP" id="PD3-ff-7OA"/>
                         <outlet property="tableView" destination="2hf-Rh-pXP" id="oNK-f5-Ncf"/>
                     </connections>
                 </viewController>
