@@ -37,7 +37,8 @@
     [retrieveData findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         NSLog(@"%@",objects);
         if (!error) {
-            colorsArray = [[NSArray alloc] initWithArray:objects];
+            kicksArray = [[NSArray alloc] initWithArray:objects];
+      
         }
         
         [tableView reloadData]; // reload tableView with new elements
@@ -65,21 +66,30 @@
 
 //get number of rows by counting number of folders
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return colorsArray.count;
+    return kicksArray.count;
 }
 
 //setup cells in tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //setup cell
-    static NSString *CellIdentifier = @"colorsCell";
+    static NSString *CellIdentifier = @"kicksCell";
     
     ksTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    PFObject *tempObject = [colorsArray objectAtIndex:indexPath.row];
+   PFObject *tempObject = [kicksArray objectAtIndex:indexPath.row];
     
    cell.cellTitle.text = [tempObject objectForKey:@"text"];  //object key from Parse
-    
+   cell.shoeSize.text = [tempObject objectForKey:@"size"];
+   
+    //get kickPhoto and put into cellImage
+    PFFile *imageFile = [tempObject objectForKey:@"picture"];
+    [imageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+        if (!error) {
+            cell.cellImage.image = [UIImage imageWithData:imageData];
+        }
+    }];
+
     return cell;
     
 }
@@ -89,7 +99,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cell tapped");
     
-    PFObject *tempObject = [colorsArray objectAtIndex:indexPath.row];
+    PFObject *tempObject = [kicksArray objectAtIndex:indexPath.row];
     NSLog(@"%@", tempObject.objectId);
     
     

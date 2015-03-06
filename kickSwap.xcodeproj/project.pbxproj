@@ -34,6 +34,12 @@
 		A821CE861A4BF14C002952E8 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821CE851A4BF14C002952E8 /* Twitter.framework */; };
 		A821CE881A4BF284002952E8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821CE871A4BF284002952E8 /* Social.framework */; };
 		A821CE8A1A4BF28F002952E8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821CE891A4BF28F002952E8 /* Accounts.framework */; };
+		A84E30861AA79C7100A21179 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84E30851AA79C7100A21179 /* UIKit.framework */; };
+		A84E30931AA7A96D00A21179 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = A84E308D1AA7A96D00A21179 /* UIImage+Resize.m */; };
+		A84E30941AA7A96D00A21179 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = A84E308E1AA7A96D00A21179 /* UIImage+Alpha.m */; };
+		A84E30951AA7A96D00A21179 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = A84E308F1AA7A96D00A21179 /* UIImage+RoundedCorner.m */; };
+		A84E30981AA7ADB600A21179 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84E30971AA7ADB500A21179 /* ImageIO.framework */; };
+		A84E309A1AA7ADBF00A21179 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84E30991AA7ADBF00A21179 /* MessageUI.framework */; };
 		A8C1E03E1A94F77C00E9657E /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */; };
 		A8C1E0441A951AEF00E9657E /* ksPostKickController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C1E0431A951AEF00E9657E /* ksPostKickController.m */; };
 		A8DDB23F1A7C10F7009F51E2 /* ksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DDB23E1A7C10F7009F51E2 /* ksTableViewCell.m */; };
@@ -84,6 +90,15 @@
 		A821CE851A4BF14C002952E8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		A821CE871A4BF284002952E8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A821CE891A4BF28F002952E8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A84E30851AA79C7100A21179 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A84E308D1AA7A96D00A21179 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		A84E308E1AA7A96D00A21179 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		A84E308F1AA7A96D00A21179 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		A84E30901AA7A96D00A21179 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		A84E30911AA7A96D00A21179 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		A84E30921AA7A96D00A21179 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		A84E30971AA7ADB500A21179 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A84E30991AA7ADBF00A21179 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A85A4B6C1A6E0322001B9CF4 /* ksDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ksDelegate.h; sourceTree = "<group>"; };
 		A8C1E03C1A94F77800E9657E /* ODRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
@@ -98,6 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84E309A1AA7ADBF00A21179 /* MessageUI.framework in Frameworks */,
+				A84E30981AA7ADB600A21179 /* ImageIO.framework in Frameworks */,
+				A84E30861AA79C7100A21179 /* UIKit.framework in Frameworks */,
 				A821CE8A1A4BF28F002952E8 /* Accounts.framework in Frameworks */,
 				A821CE881A4BF284002952E8 /* Social.framework in Frameworks */,
 				A821CE861A4BF14C002952E8 /* Twitter.framework in Frameworks */,
@@ -134,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A821CE3D1A4BE8BB002952E8 /* kickSwap */,
+				A821CE3E1A4BE8BB002952E8 /* Supporting Files */,
 				A821CE571A4BE8BC002952E8 /* kickSwapTests */,
 				A821CE681A4BE9D1002952E8 /* Frameworks */,
 				A821CE3C1A4BE8BB002952E8 /* Products */,
@@ -161,14 +180,14 @@
 				A8C1E0431A951AEF00E9657E /* ksPostKickController.m */,
 				A821CE4B1A4BE8BB002952E8 /* Images.xcassets */,
 				A821CE4D1A4BE8BB002952E8 /* LaunchScreen.xib */,
-				A821CE3E1A4BE8BB002952E8 /* Supporting Files */,
 				A8DDB23E1A7C10F7009F51E2 /* ksTableViewCell.m */,
 				A8DDB23D1A7C10F7009F51E2 /* ksTableViewCell.h */,
 				A809F9EF1A58C732008C31B4 /* TableViewController.m */,
 				A809F9EE1A58C732008C31B4 /* TableViewController.h */,
-				A85A4B6C1A6E0322001B9CF4 /* ksDelegate.h */,
 				A8C1E03C1A94F77800E9657E /* ODRefreshControl.h */,
 				A8C1E03D1A94F77C00E9657E /* ODRefreshControl.m */,
+				A85A4B6C1A6E0322001B9CF4 /* ksDelegate.h */,
+				A84E30961AA7A97300A21179 /* UIImageAdditions */,
 			);
 			path = kickSwap;
 			sourceTree = "<group>";
@@ -180,6 +199,7 @@
 				A821CE401A4BE8BB002952E8 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = kickSwap;
 			sourceTree = "<group>";
 		};
 		A821CE571A4BE8BC002952E8 /* kickSwapTests */ = {
@@ -202,6 +222,9 @@
 		A821CE681A4BE9D1002952E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A84E30991AA7ADBF00A21179 /* MessageUI.framework */,
+				A84E30971AA7ADB500A21179 /* ImageIO.framework */,
+				A84E30851AA79C7100A21179 /* UIKit.framework */,
 				A821CE891A4BF28F002952E8 /* Accounts.framework */,
 				A821CE871A4BF284002952E8 /* Social.framework */,
 				A821CE831A4BEB02002952E8 /* libsqlite3.dylib */,
@@ -223,6 +246,19 @@
 				A821CE651A4BE9BD002952E8 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A84E30961AA7A97300A21179 /* UIImageAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				A84E308D1AA7A96D00A21179 /* UIImage+Resize.m */,
+				A84E308E1AA7A96D00A21179 /* UIImage+Alpha.m */,
+				A84E308F1AA7A96D00A21179 /* UIImage+RoundedCorner.m */,
+				A84E30901AA7A96D00A21179 /* UIImage+RoundedCorner.h */,
+				A84E30911AA7A96D00A21179 /* UIImage+Resize.h */,
+				A84E30921AA7A96D00A21179 /* UIImage+Alpha.h */,
+			);
+			name = UIImageAdditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,9 +362,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8DDB23F1A7C10F7009F51E2 /* ksTableViewCell.m in Sources */,
+				A84E30931AA7A96D00A21179 /* UIImage+Resize.m in Sources */,
+				A84E30941AA7A96D00A21179 /* UIImage+Alpha.m in Sources */,
 				A8C1E0441A951AEF00E9657E /* ksPostKickController.m in Sources */,
 				A809F9F01A58C732008C31B4 /* TableViewController.m in Sources */,
 				A821CE471A4BE8BB002952E8 /* ViewController.m in Sources */,
+				A84E30951AA7A96D00A21179 /* UIImage+RoundedCorner.m in Sources */,
 				A821CE441A4BE8BB002952E8 /* AppDelegate.m in Sources */,
 				A8C1E03E1A94F77C00E9657E /* ODRefreshControl.m in Sources */,
 				A821CE411A4BE8BB002952E8 /* main.m in Sources */,

@@ -13,7 +13,7 @@
 
 @interface TableViewController : UIViewController <UITableViewDelegate>{
     
-    NSArray *colorsArray;
+    NSArray *kicksArray;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
