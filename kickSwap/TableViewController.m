@@ -89,32 +89,46 @@
             cell.cellImage.image = [UIImage imageWithData:imageData];
         }
     }];
-
+ 
     return cell;
     
 }
 
 
-/*/user selects folder to add tag to
+//user selects folder to add tag to
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cell tapped");
-    
     PFObject *tempObject = [kicksArray objectAtIndex:indexPath.row];
     NSLog(@"%@", tempObject.objectId);
     
+    //Retrieve Description from Parse >> Description Label
+    _kickPostDescription.text = [tempObject objectForKey:@"description"];
     
-    _infoDetailLabel.text = [tempObject objectForKey:@"detailInformation"];
-    [self animateDetailView];
+    //Display View
+    [self displayKickPostInfo];
     
 }
 
-*/
+-(void) displayKickPostInfo
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        _kickPostDetails.frame = CGRectMake(0, 0, 400 , 751);
+    }];
+}
+
+- (IBAction)backBtnPressed:(id)sender {
+    [UIView animateWithDuration:0.5 animations:^{
+        _kickPostDetails.frame = CGRectMake(400, 0, 400 , 751);
+    }];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 
