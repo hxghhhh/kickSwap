@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImage+Resize.h"
 
 @interface ksPostKickController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 ///////////////////////////////////////////////////////////
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextField *sizeTextField;
 ////////////////////////////////////////////////////////////
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -19,6 +21,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *takePhoto;
 @property (weak, nonatomic) IBOutlet UIButton *selectPhoto;
+
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 
 
 @end

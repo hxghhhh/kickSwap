@@ -80,7 +80,10 @@
    PFObject *tempObject = [kicksArray objectAtIndex:indexPath.row];
     
    cell.cellTitle.text = [tempObject objectForKey:@"text"];  //object key from Parse
-   PFFile *imageFile = [tempObject objectForKey:@"picture"];
+   cell.shoeSize.text = [tempObject objectForKey:@"size"];
+   
+    //get kickPhoto and put into cellImage
+    PFFile *imageFile = [tempObject objectForKey:@"picture"];
     [imageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
         if (!error) {
             cell.cellImage.image = [UIImage imageWithData:imageData];
